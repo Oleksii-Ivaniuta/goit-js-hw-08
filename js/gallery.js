@@ -81,7 +81,6 @@ for (image of images) {
 gallery.insertAdjacentHTML("afterBegin", markup.join(""));
 const galleryImage = document.querySelector(".gallery-image")
 gallery.addEventListener("click", event => {
-    event.target = galleryImage;
     event.preventDefault();
     if (event.target.nodeName !== "IMG") {
         return;
